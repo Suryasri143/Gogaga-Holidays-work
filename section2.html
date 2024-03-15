@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flight Booking</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f8f9fa; /* Light gray background */
+      color: #333; /* Text color */
+    }
+    section#section2 {
+      padding: 50px 0;
+      text-align: center;
+    }
+    section.search-form {
+      background-color: #fff; /* White background */
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow */
+      padding: 30px;
+      margin-bottom: 30px;
+    }
+    section.search-form h2 {
+      margin-bottom: 20px;
+      color: #007bff; /* Blue color */
+    }
+    section.search-form label {
+      display: block;
+      text-align: left;
+      margin-bottom: 10px;
+    }
+    section.search-form input[type="text"],
+    section.search-form input[type="date"],
+    section.search-form button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc; /* Gray border */
+      border-radius: 5px;
+      transition: border-color 0.3s;
+    }
+    section.search-form input[type="text"]:focus,
+    section.search-form input[type="date"]:focus {
+      outline: none;
+      border-color: #007bff; /* Blue border on focus */
+    }
+    section.search-form input[type="text"]:hover::placeholder,
+    section.search-form input[type="date"]:hover::placeholder {
+      color: #007bff; /* Blue placeholder text on hover */
+    }
+    section.search-form button {
+      background-color: #007bff; /* Blue button background */
+      border: none;
+      color: #fff; /* White button text */
+      cursor: pointer;
+    }
+    section.search-form button:hover {
+      background-color: #0056b3; /* Darker blue on hover */
+    }
+    section.search-results {
+      /* Additional styling for search results if needed */
+    }
+  </style>
+</head>
+<body>
+<button type="button" class="btn btn-link">
+        <a href="home.html" class="nav-link">
+          <span class="oi oi-arrow-left" aria-hidden="true"></span>
+          Home
+        </a>
+</button>
+<section id="section2">
+  <div class="container">
+    <h1>Flight Booking</h1>
+
+    <main>
+        <section class="search-form">
+            <h2>Find Your Flight</h2>
+            <form action="#" method="get">
+                <div class="row">
+                  <div class="col-md-8 offset-md-2">
+                    <label for="origin">Origin:</label>
+                    <input type="text" id="origin" name="origin" required placeholder="Enter origin">
+
+                    <label for="destination">Destination:</label>
+                    <input type="text" id="destination" name="destination" required placeholder="Enter destination">
+
+                    <label for="departure">Departure Date:</label>
+                    <input type="date" id="departure" name="departure" required>
+
+                    <button type="submit">Search</button>
+                  </div>
+                </div>
+            </form>
+        </section>
+
+        <section class="search-results">
+            <!-- Flight search results will be displayed here -->
+        </section>
+    </main>
+  </div>
+</section>
+
+<!-- Bootstrap JS and dependencies (jQuery) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gogaga Holidays</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="home.html">
+  <style>
+    body {
+      background-color: #f8f9fa; /* Light gray background */
+    }
+    .container-heading1 {
+      color: #007bff;
+    }
+    .package {
+      margin: 20px;
+    }
+    .package img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+    .package img:hover {
+      transform: scale(1.1);
+    }
+    .heading1 {
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
+    .paragraph1 {
+      list-style-type: none;
+      margin: 5px 0;
+    }
+    .button1 {
+      background-color: #007bff;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .button1:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <button type="button" class="btn btn-link">
+    <a href="home.html" class="nav-link">
+      <span class="oi oi-arrow-left" aria-hidden="true"></span>
+      Home
+    </a>
+  </button>
+<section id="section1">
+  <div class="container">
+    <h1 class="container-heading1">Holiday Packages</h1>
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="d-flex flex-row">
+            <div class="package">
+              <img src="https://mygate.com/wp-content/uploads/2023/08/159.jpg" class="package1">
+              <h2 class="heading1">GOA</h2>
+              <ul>
+                <li class="paragraph1">3 NIGHTS / 4 DAYS</li>
+                <li class="paragraph1">Breakfast, dinner</li>
+                <li class="paragraph1">Sightseeing tour</li>
+                <li class="paragraph1">Transfers</li>
+              </ul>
+              <button class="button1">Price: $7300</button>
+            </div>
+            <div class="package">
+              <img src="https://www.honeymoonbug.com/blog/wp-content/uploads/2022/02/kerala-tour-packages.jpg" class="package1">
+              <h2 class="heading1">KERALA</h2>
+              <ul>
+                <li class="paragraph1">3 NIGHTS / 5 DAYS</li>
+                <li class="paragraph1">Breakfast, dinner</li>
+                <li class="paragraph1">Sightseeing tour</li>
+                <li class="paragraph1">Transfers</li>
+              </ul>
+              <button class="button1">Price: $11700</button>
+            </div>
+            <div class="package">
+              <img src="https://travelsoftholidays.com/wp-content/uploads/2022/07/book-andaman-tour-package-from-siliguri-today.jpg" class="package1">
+              <h2 class="heading1">ANDAMAN</h2>
+              <ul>
+                <li class="paragraph1">3 NIGHTS / 4 DAYS</li>
+                <li class="paragraph1">Breakfast, dinner</li>
+                <li class="paragraph1">Sightseeing tour</li>
+                <li class="paragraph1">Transfers</li>
+              </ul>
+              <button class="button1">Price: $7800</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Bootstrap JS and dependencies (jQuery) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
